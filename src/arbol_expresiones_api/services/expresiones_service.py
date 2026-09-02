@@ -10,7 +10,7 @@ from arbol_expresiones_api.schemas.expresiones import ExpresionSalida
 
 
 class ExpresionInvalidaError(Exception):
-    """Error de negocio: la expresion infija no es valida."""
+    """Error: la expresion infija no es valida."""
 
 
 def convertir_infija_a_posfija(expresion: str) -> ExpresionSalida:

@@ -22,9 +22,7 @@
 
 from fastapi import FastAPI
 
-from arbol_expresiones_api.controllers.expresiones_controller import (
-    router as expresiones_router,
-)
+from arbol_expresiones_api.controllers.expresiones_controller import (router as expresiones_router)
 
 app = FastAPI(
     title="API Arbol de Expresiones",
