@@ -11,8 +11,8 @@
 #   main.py                    -> arranque de la app
 #   controllers/               -> rutas HTTP (endpoints)
 #   services/                  -> logica de negocio
-#   arbol.py                   -> modelo (arbol de expresiones)
-#   schemas.py                 -> validacion de entrada/salida
+#   models/                    -> modelo (arbol de expresiones)
+#   schemas/                   -> validacion de entrada/salida
 #
 # Ejecutar con:
 #   uv run fastapi dev main.py

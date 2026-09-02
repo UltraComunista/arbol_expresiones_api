@@ -6,7 +6,7 @@
 
 from fastapi import APIRouter, HTTPException, status
 
-from arbol_expresiones_api.schemas import (
+from arbol_expresiones_api.schemas.expresiones import (
     ErrorSalida,
     ExpresionEntrada,
     ExpresionSalida,

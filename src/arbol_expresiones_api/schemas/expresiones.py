@@ -1,4 +1,4 @@
-# schemas.py
+# schemas/expresiones.py
 # Esquemas Pydantic: validacion de entrada y salida de la API
 # ============================================================
 # Aqui se definen QUE datos recibe y devuelve la API, con sus

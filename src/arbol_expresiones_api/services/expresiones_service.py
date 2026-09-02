@@ -5,8 +5,8 @@
 # Los controladores NO hablan directo con el modelo: pasan por
 # esta capa.
 
-from arbol_expresiones_api.arbol import ArbolExpresion
-from arbol_expresiones_api.schemas import ExpresionSalida
+from arbol_expresiones_api.models.arbol import ArbolExpresion
+from arbol_expresiones_api.schemas.expresiones import ExpresionSalida
 
 
 class ExpresionInvalidaError(Exception):

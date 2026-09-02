@@ -56,8 +56,10 @@ Arquitectura por capas (estilo MVC adaptado a FastAPI):
 ```
 ├── main.py                                    # Arranque de la app
 └── src/arbol_expresiones_api/
-    ├── arbol.py                               # Modelo: arbol de expresiones
-    ├── schemas.py                             # Validaciones (Pydantic)
+    ├── models/
+    │   └── arbol.py                           # Modelo: arbol de expresiones
+    ├── schemas/
+    │   └── expresiones.py                     # Validaciones (Pydantic)
     ├── controllers/
     │   └── expresiones_controller.py          # Rutas HTTP (endpoints)
     └── services/
