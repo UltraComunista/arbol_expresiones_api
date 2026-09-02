@@ -51,8 +51,19 @@ Se admiten `+ - * /`, paréntesis y números decimales.
 
 ## Estructura
 
+Arquitectura por capas (estilo MVC adaptado a FastAPI):
+
 ```
-├── main.py                          # API FastAPI (endpoints)
+├── main.py                                    # Arranque de la app
 └── src/arbol_expresiones_api/
-    └── arbol.py                     # Lógica del árbol de expresiones
+    ├── arbol.py                               # Modelo: arbol de expresiones
+    ├── schemas.py                             # Validaciones (Pydantic)
+    ├── controllers/
+    │   └── expresiones_controller.py          # Rutas HTTP (endpoints)
+    └── services/
+        └── expresiones_service.py             # Logica de negocio
 ```
+
+Las validaciones se hacen en dos niveles: **Pydantic** rechaza
+caracteres no permitidos y entradas vacías (422), y el **servicio**
+rechaza expresiones mal formadas como `(3+4` (400).
